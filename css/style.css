@@ -1,0 +1,259 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root{
+    /* Primary */
+
+--red: hsl(0, 100%, 74%);
+--green: hsl(154, 59%, 51%);
+
+/* Accent */
+
+--blue: hsl(248, 32%, 49%);
+ /* Neutral */
+
+--dark-blue: hsl(249, 10%, 26%);
+--grayish-blue: hsl(246, 25%, 77%);
+
+  }
+
+  .fondo{
+    background-image: url("/images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-color: var(--red) ;
+  }
+
+  @media (min-width: 1440px){
+    .fondo{
+      background-image: url("/images/bg-intro-desktop.png");
+      display: flex;
+      justify-content: space-evenly;
+     
+    }
+  }
+
+  .formulario{
+    text-align: center;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: 1440px){
+    .formulario{
+      margin-top: 122px;
+    }
+  
+  }
+
+  .titulo{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: 1440px){
+    .titulo{
+      padding-top: 306px;
+    }
+  }
+
+  .titulo h1{
+    color: white;
+    width: 230px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1440px){
+    .titulo h1{
+      width: 413px;
+      text-align: left;
+      margin: 0px;
+      font-size: xx-large;
+      line-height: 1;
+    }
+  }
+
+  .titulo p{
+    margin: auto;
+    margin-top: 33px;
+   color: whitesmoke;
+   width: 314px;
+  }
+
+  @media (min-width: 1440px){
+    .titulo p{
+     width: 495px;
+     text-align: left;
+    }
+  }
+
+  .boton-gratis{
+    text-align: center;
+  }
+
+  .boton-gratis_boton{
+    width: 330px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    border: none;
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.17);
+
+  }
+
+  @media (min-width: 1440px){
+    .boton-gratis_boton{
+      width: 540px;
+      height: 50px;
+    }
+  }
+
+  .boton-gratis_boton p{
+    color: white;
+    margin: auto;
+    font-size: 16px;
+    width: 167px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 1440px){
+    .boton-gratis_boton p{
+      margin: auto;
+      font-size: 16px;
+      width: auto;
+    }
+  }
+
+  .boton-gratis_boton span{
+    font-weight: 700;
+  }
+
+  .formulario-datos{
+    margin: auto;
+    margin-top: 26px;
+    background-color: white;
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.17);
+    width: 328px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  @media (min-width: 1440px){
+    .formulario-datos{
+      width: 540px;
+      height: auto;
+    }
+  }
+
+  
+  .formulario-datos input{
+    width: 280px;
+    height: 56px;
+    margin: 8px;
+    font-weight: 700;
+    padding-left: 22px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--grayish-blue);
+  }
+
+  @media (min-width: 1440px){
+    .formulario-datos input{
+      width: 460px;
+      height: 56px;
+    }
+  }
+
+  form{
+    padding-top: 16px;
+  }
+
+  @media (min-width: 1440px){
+    form{
+      padding-top: 41px;
+    }
+  }
+
+  .boton-formulario_enviar{
+    width: 279px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: var(--green);
+    border: none;
+    box-shadow: 0px 7px 0px 0px hsl(154, 57%, 48%);
+    cursor: pointer;
+  }
+
+  @media (min-width: 1440px){
+    .boton-formulario_enviar{
+      width: 279px;
+      height: 55px;
+      border-radius: 5px;
+      background-color: var(--green);
+      border: none;
+      box-shadow: 0px 7px 0px 0px hsl(154, 57%, 48%);
+    }
+  }
+  
+  .boton-formulario_enviar p{
+    color: white;
+    margin: auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.texto-formulario{
+    margin: auto;
+    margin-top: 10px;
+    margin-top: 17px;
+    width: 234px;
+    font-size: x-small;
+    line-height: 2.2;
+    color: var(--grayish-blue);
+  } 
+
+  .texto-formulario span{
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  .icon-error{
+    position: absolute;
+    right: 15px;
+    top: -45px;
+}
+
+.error{
+  color: var(--red);
+  font-style: italic;
+  margin: -12px 0 18px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.error-container{
+  position: relative;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+  
+  
+
+
+  
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
